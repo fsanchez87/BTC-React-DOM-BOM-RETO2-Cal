@@ -15,11 +15,18 @@
         "cuatro cinco seis resta"
         "siete ocho nueve multiplicacion"
         "cero decimal borrar igual";
+    min-width: 30vh;
+    min-height: 50vh;
 }
 
 .grid-container * {
     background-color: darkturquoise;
 
+}
+.bttnCal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .input {
