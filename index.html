@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Reto: Calculadora básica</title>
-  </head>
-  <body>
-    <div class="contenedor">
-      <div class="grid-container">
-        <div class="bttnCal titulo">
-          <h3>Calculadora básica</h3>
-        </div>
-        <div class="input">
-          <input type="text" name="" id="" />
-        </div>
-        <div class="bttnCal division">/</div>
-        <div class="bttnCal resta">-</div>
-        <div class="bttnCal multiplicacion">*</div>
-        <div class="bttnCal igual">=</div>
-        <div class="bttnCal borrar">C</div>
-        <div class="bttnCal decimal">.</div>
-        <div class="bttnCal uno">1</div>
-        <div class="bttnCal dos">2</div>
-        <div class="bttnCal tres">3</div>
-        <div class="bttnCal cuatro">4</div>
-        <div class="bttnCal cinco">5</div>
-        <div class="bttnCal seis">6</div>
-        <div class="bttnCal siete">7</div>
-        <div class="bttnCal ocho">8</div>
-        <div class="bttnCal nueve">9</div>
-        <div class="bttnCal cero">0</div>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Reto: Calculadora básica</title>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="grid-container">
+      <input type="text" class="input" id="input" maxlength="20" />
+      <input type="button" value="1" class="uno" onclick="recogeValor(document.querySelector('.uno').value)">
+      <input type="button" value="2" class="dos" onclick="recogeValor(document.querySelector('.dos').value)">
+      <input type="button" value="3" class="tres" onclick="recogeValor(this.value)">
+      <input type="button" value="/" class="division" onclick="recogeValor(this.value)">
+      <input type="button" value="4" class="cuatro" onclick="recogeValor(this.value)">
+      <input type="button" value="5" class="cinco" onclick="recogeValor(this.value)">
+      <input type="button" value="6" class="seis" onclick="recogeValor(this.value)">
+      <input type="button" value="-" class="resta" onclick="recogeValor(this.value)">
+      <input type="button" value="7" class="siete" onclick="recogeValor(this.value)">
+      <input type="button" value="8" class="ocho" onclick="recogeValor(this.value)">
+      <input type="button" value="9" class="nueve" onclick="recogeValor(this.value)">
+      <input type="button" value="*" class="multiplicacion" onclick="recogeValor(this.value)">
+      <input type="button" value="0" class="cero" onclick="recogeValor(this.value)">
+      <input type="button" value="." class="coma" onclick="recogeValor(this.value)">
+      <button type="button" value=" " class="borrar" onclick="borrar(this.value)">C</button>
+      <input type="button" value="=" class="igual" onclick="calcula()">
     </div>
-    <script src="main.js"></script>
-  </body>
+  </div>
+  <script src="main.js"></script>
+</body>
+
 </html>
